@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)" preserve-order="false">
+    <classes>
+      <class name="org.gajanan.selenium.DownloadTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="downloadTest"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.ABTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyDropDownList"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.RightClickTest">
+        <methods>
+          <include name="contextClickTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.DisabledElementTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="disabledElementTest"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.ContextKeyTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="contextClickTest"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.DataTableTest">
+        <methods>
+          <include name="verifyDataTable"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.MultipleWindowsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyMultipleWindows"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.DownloadSecureFileTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyDropDownList"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.TakeScreenshotTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="againFail"/>
+          <include name="verifyTakeScreenshot"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.AppliToolsEyesTest">
+        <methods>
+          <include name="test"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.FrameTest">
+        <methods>
+          <include name="verifyFrames"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.DropDownTest">
+        <methods>
+          <include name="verifyDropDownList"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.UploadTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="randomTest"/>
+          <include name="verifyUpload"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.DownloadWithoutBrowserTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyDropDownList"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.ActionRevisitedTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.pageobjects.LoginFeatureTest">
+        <methods>
+          <include name="verifyValidLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.DragAndDropTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="dragAndDropTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.DynamicLoadTest">
+        <methods>
+          <include name="verifyCSS"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="org.gajanan.selenium.CSSTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

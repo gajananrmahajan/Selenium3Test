@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">15</td><td class="numi_attn">4</td><td class="numi">195.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.DownloadSecureFileTest<td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">org.gajanan.selenium.AppliToolsEyesTest<td><a href="#m2"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.DynamicLoadTest<td><a href="#m3"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">org.gajanan.selenium.TakeScreenshotTest<td><a href="#m4"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.DisabledElementTest<td><a href="#m5"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">org.gajanan.selenium.DropDownTest<td><a href="#m6"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.FrameTest<td><a href="#m7"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">org.gajanan.selenium.ContextKeyTest<td><a href="#m8"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.DownloadTest<td><a href="#m9"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">org.gajanan.selenium.MultipleWindowsTest<td><a href="#m10"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.UploadTest<td><a href="#m11"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">org.gajanan.selenium.RightClickTest<td><a href="#m12"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.DataTableTest<td><a href="#m13"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.DownloadWithoutBrowserTest<td><a href="#m14"><b>verifyDropDownList</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr>
+<tr class="failedeven"><td rowspan="1">org.gajanan.pageobjects.LoginFeatureTest<td><a href="#m15"><b>verifyValidLogin</b>  </a></td><td class="numi">1</td><td class="numi">10</td></tr>
+<tr class="failedodd"><td rowspan="1">org.gajanan.selenium.ABTest<td><a href="#m16"><b>verifyDropDownList</b>  </a></td><td class="numi">1</td><td class="numi">98</td></tr>
+<tr class="failedeven"><td rowspan="1">org.gajanan.selenium.DragAndDropTest<td><a href="#m17"><b>dragAndDropTest</b>  </a></td><td class="numi">1</td><td class="numi">399</td></tr>
+<tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.FrameTest<td><a href="#m18"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.TakeScreenshotTest<td><a href="#m19"><b>afterMethod</b>  </a></td><td class="numi">2</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.DisabledElementTest<td><a href="#m20"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.DropDownTest<td><a href="#m21"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="2">org.gajanan.selenium.TakeScreenshotTest<td><a href="#m22"><b>afterMethod</b>  </a></td><td class="numi">2</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m23"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.UploadTest<td><a href="#m24"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.MultipleWindowsTest<td><a href="#m25"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.DataTableTest<td><a href="#m26"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.RightClickTest<td><a href="#m27"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.DownloadTest<td><a href="#m28"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.AppliToolsEyesTest<td><a href="#m29"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.DownloadSecureFileTest<td><a href="#m30"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.ContextKeyTest<td><a href="#m31"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.DynamicLoadTest<td><a href="#m32"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.FrameTest<td><a href="#m33"><b>verifyFrames</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.DownloadSecureFileTest<td><a href="#m34"><b>verifyDropDownList</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.TakeScreenshotTest<td><a href="#m35"><b>againFail</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.ContextKeyTest<td><a href="#m36"><b>contextClickTest</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.UploadTest<td><a href="#m37"><b>randomTest</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.MultipleWindowsTest<td><a href="#m38"><b>verifyMultipleWindows</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.DownloadTest<td><a href="#m39"><b>downloadTest</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.DisabledElementTest<td><a href="#m40"><b>disabledElementTest</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.RightClickTest<td><a href="#m41"><b>contextClickTest</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.UploadTest<td><a href="#m42"><b>verifyUpload</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.DynamicLoadTest<td><a href="#m43"><b>verifyCSS</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.TakeScreenshotTest<td><a href="#m44"><b>verifyTakeScreenshot</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.DataTableTest<td><a href="#m45"><b>verifyDataTable</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">org.gajanan.selenium.AppliToolsEyesTest<td><a href="#m46"><b>test</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">org.gajanan.selenium.DropDownTest<td><a href="#m47"><b>verifyDropDownList</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">org.gajanan.selenium.CSSTest<td><a href="#m48"><b>verifyCSS</b>  </a></td><td class="numi">1</td><td class="numi">86</td></tr>
+<tr class="passedeven"><td rowspan="1">org.gajanan.selenium.ActionRevisitedTest<td><a href="#m49"><b>verifyDropDownList</b>  </a></td><td class="numi">1</td><td class="numi">2845</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>org.gajanan.selenium.DownloadSecureFileTest:setUp</h2>
+<div style="padding-left:3em">
+<p>no such session
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 122 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created exception
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64), platform=ANY}]
+Session ID: 6112fd2af3d52c5d2a3842d404b5a2c7</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at org.gajanan.selenium.DownloadSecureFileTest.setUp(DownloadSecureFileTest.java:46)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>org.gajanan.selenium.AppliToolsEyesTest:setUp</h2>
+<div style="padding-left:3em">
+<p>null</p>
+org.gajanan.selenium.AppliToolsEyesTest.setUp(AppliToolsEyesTest.java:28)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>org.gajanan.selenium.DynamicLoadTest:setUp</h2>
+<div style="padding-left:3em">
+<p>unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.35 seconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\GAMAHAJA\AppData\Local\Temp\scoped_dir14328_12114}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 7904f538419353a28d70dee1b65e7055</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at org.gajanan.selenium.DynamicLoadTest.setUp(DynamicLoadTest.java:26)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>org.gajanan.selenium.TakeScreenshotTest:setUp</h2>
+<div style="padding-left:3em">
+<p>unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.06 seconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\GAMAHAJA\AppData\Local\Temp\scoped_dir12748_29490}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 88d4b06f71f279cb77345ea1876e14fd</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at org.gajanan.selenium.TakeScreenshotTest.setUp(TakeScreenshotTest.java:39)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>org.gajanan.selenium.DisabledElementTest:setUp</h2>
+<div style="padding-left:3em">
+<p>this.browserForTab is undefined
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=12404, browserVersion=50.1.0, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: a7a23c57-be8c-4c22-b922-b41c5893b8fb</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+<br/>at org.gajanan.selenium.DisabledElementTest.setUp(DisabledElementTest.java:24)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>org.gajanan.selenium.DropDownTest:setUp</h2>
+<div style="padding-left:3em">
+<p>unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.15 seconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\GAMAHAJA\AppData\Local\Temp\scoped_dir15324_14924}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3be7dfc458462a19c687ef8db3e5970d</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at org.gajanan.selenium.DropDownTest.setUp(DropDownTest.java:26)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>org.gajanan.selenium.FrameTest:setUp</h2>
+<div style="padding-left:3em">
+<p>no such session
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 81 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created exception
+from chrome not reachable
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64), platform=ANY}]
+Session ID: 35fdc8c504ae4187369db917a019d9b3</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at org.gajanan.selenium.FrameTest.setUp(FrameTest.java:24)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>org.gajanan.selenium.ContextKeyTest:setUp</h2>
+<div style="padding-left:3em">
+<p>Failed to decode response from marionette
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=14976, browserVersion=50.1.0, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: b92af3bb-8d60-4efb-bf38-72e4692a6062</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+<br/>at org.gajanan.selenium.ContextKeyTest.setUp(ContextKeyTest.java:26)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>org.gajanan.selenium.DownloadTest:setUp</h2>
+<div style="padding-left:3em">
+<p>Failed to decode response from marionette
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAESRN0oAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51XTXPbNhC991dkdGpnIkSylMRJT67jdtrxxJ0onlw0gwHBJQkJBFB8iNa/74KULFmkSDknUdQC+/Hevl0FB5YaC9mvo8TqCr8RxzKon4XKSclkxSwQUCyRkI7evsmYdPDb77+Ew8mUebQx2vp4pAAmfdF8J2i0EXzg/N5zAdKAvTHGEQUbfHJrjGYD3/UX4dZ4diRKlsO7lYH87RtmjBSceaHVO5NmL19o7sGPnbfAytFLbwp8pe2aFN4bYgrhiu04/myYc2MJKvcFurp6/747SLwxxY8UPKCP9E9hnb/BzLkEPOZtOC2OLrGKT5QXVpdAHbfCeGqDol6U8chs0u3Is8QRLL56ULdSO+ivXaorJTVL0ZfCGiGMha5+FKAWiE3Epfu4waCMd9EZLXXK5ADSsPFaS0fAWm25Vk7LY3Db6TuRK62waiWUCdhF/dX15+LAOQTReY3Ms+AC1i3DQCm3zBX9Z6VQa6INKApPHqxiMoL5ar5mEdZvQXU7qyBJrUCGUsY5IJxBYeYO6UA5WO86K/GMlHBGsi2kd9PJ4qtG5kRo593G+Cp9UD+EQnzddEIEOtKP3+5jM7BEB/85kUytR23ONQlRJiVdOSxGjFM0pW/H9mQElhttSVUID1I4jxf8F4Q9x4RIg7XwZNdNe9ZhcpELvQWQDIHBBuinmou8DYYU2DUG76YVSB47KNgI6Wg00AeZltin95hJmwCRGqqmGAkG2QBEIQ7Z9hFNXi1xwUR/d725AA9W+C3SSgI+ERQmwT3VVuRCUaNRt7b9vFZQYY+SXfI90L8ItLmZxJeLkJSi7qt/65c3NXMvk/TOa3ozfm7lHYoRQbQ8I3WHpsU0q5rsbdB0lqEdjFmcD0hVXdFkS1PIWJC+W3v2ZefO7MjWHW2bD73U3HMfGwVlzdstaWS0tr8asr1oFN493t+QGWEHkNrprdiGNeOkV4FPodg3VD+P2nFbWNUTr9dJQ9N4fX+eRxVnwcf5Ho0XHEkQFWo6OSe4za1U4ZjfAMUtQQ3I7dEYfUCGDYaTSM3XtQBeBJQDZnmxo83QiC5JQ26ShtJcBNqznKUiKtPo9vNy+Rdbodqq5fIfJMByuUCElAjl7Ds4v1xes/nsI5slY3bNJ+P5lF2PP82v5uOPcH314dN0knxg0xOssaMu4v0LcmpEw4q0W+pbgneqdLPunawZI+N9qyNlfRhYFna2Z2Rst3wNb11HI93VC8dhpKPchXoutPM8qlykcXcQR32qmxlcL2d/q9tmfzq7Nu6GKa2VMcUyqpxGMgwwEtdoSXgBfP2lEcc/ml9eP2cJS1MRI2YDU6fzv8PP/meQOs/jy9162Ttnjhq3zvgWdRilIREysk+JvPDyzGQ9Orr3+DMySveNQEpcWGsijuKSa+GkRocdK+7ESGzcbAeWrIPIyMwF06wbh/Xnf1BLBwjQ2ga9NQQAAL0NAABQSwECFAAUAAgICABEkTdK0NoGvTUEAAC9DQAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAABqBAAAAAA=}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=12560, browserVersion=50.1.0, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 3c706009-ede7-4b84-aba7-d1d99b0806ac</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+<br/>at org.gajanan.selenium.DownloadTest.setUp(DownloadTest.java:45)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>org.gajanan.selenium.MultipleWindowsTest:setUp</h2>
+<div style="padding-left:3em">
+<p>no such session
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 121 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created exception
+from chrome not reachable
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64), platform=ANY}]
+Session ID: c8629c6c4362f7989f8c8ec68308a9ef</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at org.gajanan.selenium.MultipleWindowsTest.setUp(MultipleWindowsTest.java:26)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>org.gajanan.selenium.UploadTest:setUp</h2>
+<div style="padding-left:3em">
+<p>no such session
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created exception
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64), platform=ANY}]
+Session ID: f3c67cf92efa719ee384deeb1358d5ee</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at org.gajanan.selenium.UploadTest.setUp(UploadTest.java:25)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>org.gajanan.selenium.RightClickTest:setUp</h2>
+<div style="padding-left:3em">
+<p>this.browserForTab is undefined
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=9252, browserVersion=50.1.0, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 57b40efa-07e7-4a54-966a-c4f0fdec484c</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+<br/>at org.gajanan.selenium.RightClickTest.setUp(RightClickTest.java:24)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>org.gajanan.selenium.DataTableTest:setUp</h2>
+<div style="padding-left:3em">
+<p>no such session
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 68 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64), platform=ANY}]
+Session ID: 96cf9900c5cced042305c9986b593ce0</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:882)
+<br/>at org.gajanan.selenium.DataTableTest.setUp(DataTableTest.java:30)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>org.gajanan.selenium.DownloadWithoutBrowserTest:verifyDropDownList</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\GAMAHAJA\AppData\Local\Temp\scoped_dir10912_16705}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 961cab7a25cd8477223740f0caccb869
+*** Element info: {Using=xpath, value=//a[text()=&apos;some-file.txt&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+<br/>at org.gajanan.selenium.DownloadWithoutBrowserTest.verifyDropDownList(DownloadWithoutBrowserTest.java:51)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>org.gajanan.pageobjects.LoginFeatureTest:verifyValidLogin</h2>
+<div style="padding-left:3em">
+<p>null</p>
+org.gajanan.pageobjects.Base.visit(Base.java:42)
+<br/>at org.gajanan.pageobjects.Login.&lt;init&gt;(Login.java:19)
+<br/>at org.gajanan.pageobjects.LoginFeatureTest.verifyValidLogin(LoginFeatureTest.java:48)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>org.gajanan.selenium.ABTest:verifyDropDownList</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 84 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\GAMAHAJA\AppData\Local\Temp\scoped_dir10268_31511}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6faf8ff888dd80039bced96b6e8133af
+*** Element info: {Using=css selector, value=.example &gt; h3}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+<br/>at org.gajanan.selenium.ABTest.verifyDropDownList(ABTest.java:35)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>org.gajanan.selenium.DragAndDropTest:dragAndDropTest</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 41 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;W-GAMAHAJA-19&apos;, ip: &apos;10.155.145.157&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\GAMAHAJA\AppData\Local\Temp\scoped_dir14028_25440}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8e5a45b9afaadf4cea484322d47b7519</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:917)
+<br/>at org.gajanan.selenium.DragAndDropTest.dragAndDropTest(DragAndDropTest.java:42)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>org.gajanan.selenium.FrameTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>org.gajanan.selenium.TakeScreenshotTest:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>org.gajanan.selenium.DisabledElementTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>org.gajanan.selenium.DropDownTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>org.gajanan.selenium.TakeScreenshotTest:afterMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>org.gajanan.selenium.TakeScreenshotTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>org.gajanan.selenium.UploadTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>org.gajanan.selenium.MultipleWindowsTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>org.gajanan.selenium.DataTableTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>org.gajanan.selenium.RightClickTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>org.gajanan.selenium.DownloadTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>org.gajanan.selenium.AppliToolsEyesTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>org.gajanan.selenium.DownloadSecureFileTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>org.gajanan.selenium.ContextKeyTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>org.gajanan.selenium.DynamicLoadTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>org.gajanan.selenium.FrameTest:verifyFrames</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>org.gajanan.selenium.DownloadSecureFileTest:verifyDropDownList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>org.gajanan.selenium.TakeScreenshotTest:againFail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m36"></a><h2>org.gajanan.selenium.ContextKeyTest:contextClickTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>org.gajanan.selenium.UploadTest:randomTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>org.gajanan.selenium.MultipleWindowsTest:verifyMultipleWindows</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m39"></a><h2>org.gajanan.selenium.DownloadTest:downloadTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>org.gajanan.selenium.DisabledElementTest:disabledElementTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>org.gajanan.selenium.RightClickTest:contextClickTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>org.gajanan.selenium.UploadTest:verifyUpload</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>org.gajanan.selenium.DynamicLoadTest:verifyCSS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>org.gajanan.selenium.TakeScreenshotTest:verifyTakeScreenshot</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>org.gajanan.selenium.DataTableTest:verifyDataTable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>org.gajanan.selenium.AppliToolsEyesTest:test</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m47"></a><h2>org.gajanan.selenium.DropDownTest:verifyDropDownList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>org.gajanan.selenium.CSSTest:verifyCSS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m49"></a><h2>org.gajanan.selenium.ActionRevisitedTest:verifyDropDownList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
